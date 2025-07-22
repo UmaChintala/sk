@@ -22,6 +22,7 @@ steps:
     targetDeployReleaseRepo: 'alpha-mvn-blr-libs-release-local'
     targetDeploySnapshotRepo: 'alpha-mvn-blr-libs-snapshot'
     javaHomeOption: 'JDKVersion'
+    collectBuildInfo: true
 - task: JFrogPublishBuildInfo@1
   inputs:
     artifactoryConnection: 'adopRt'
