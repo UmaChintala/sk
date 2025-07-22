@@ -12,8 +12,8 @@ pool:
 steps:
 - task: JFrogMaven@1
   inputs:
-    workingDirectory: '/school'
-    mavenPomFile: 'pom.xml'
+    #workingDirectory: '/school'
+    mavenPomFile: '/school/pom.xml'
     goals: 'install'
     artifactoryResolverService: 'adopRt'
     targetResolveReleaseRepo: 'alpha-mvn-blr-libs-release'
