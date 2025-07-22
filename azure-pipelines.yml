@@ -28,13 +28,6 @@ steps:
     artifactoryConnection: 'adopRt'
     buildName: '$(Build.DefinitionName)'
     buildNumber: '$(Build.BuildNumber)'
-- task: JFrogBuildScan@1
-  inputs:
-    xrayConnection: 'adopxray'
-    buildName: '$(Build.DefinitionName)'
-    buildNumber: '$(Build.BuildNumber)'
-    allowFailBuild: true
-    vuln: false
 - task: JFrogBuildPromotion@1
   inputs:
     artifactoryConnection: 'adopRt'
@@ -45,3 +38,10 @@ steps:
     sourceRepo: 'azuremvn-libs-prod-local'
     includeDependencies: true
     copy: true
+- task: JFrogBuildScan@1
+  inputs:
+    xrayConnection: 'adopxray'
+    buildName: '$(Build.DefinitionName)'
+    buildNumber: '$(Build.BuildNumber)'
+    allowFailBuild: true
+    vuln: false
