@@ -177,13 +177,6 @@
 			<type>jar</type>
 		</dependency>
 		
-		<dependency>
-			<groupId>ch.qos.logback</groupId>
-			<artifactId>logback-classic</artifactId>
-			<version>${logback.version}</version>
-			<scope>compile</scope>
-		</dependency>
-		
 		<!-- Content Negotiation  -->
 		<!-- XML and JSON configuration -->
  		<dependency>
