@@ -29,10 +29,10 @@ steps:
     buildName: '$(Build.DefinitionName)'
     buildNumber: '$(Build.BuildNumber)'
 - task: PowerShell@2
-  displayName: 'Wait for 30 seconds'
+  displayName: 'Wait for 50 seconds'
   inputs:
     targetType: 'inline'
-    script: 'Start-Sleep -Seconds 30'
+    script: 'Start-Sleep -Seconds 50'
 - task: JFrogBuildPromotion@1
   inputs:
     artifactoryConnection: 'adopRt'
